@@ -1,12 +1,8 @@
 import { liteClient as algoliasearch } from "algoliasearch/lite";
-import {
-  Hits,
-  InstantSearch,
-  PoweredBy,
-  SearchBox,
-  RefinementList,
-} from "react-instantsearch";
-import { MyHit, Hit } from "./Hits";
+import { InstantSearch } from "react-instantsearch";
+import { Refinements } from "./Refinements";
+import { SearchResults } from "./SearchResults";
+import { SearchHeader } from "./SearchHeader";
 
 const searchClient = algoliasearch(
   import.meta.env.VITE_ALGOLIA_APP_ID,
@@ -21,16 +17,11 @@ export default function App() {
         indexName={import.meta.env.VITE_ALGOLIA_INDEX_NAME}
         insights
       >
-        <div className="relative flex items-center justify-end">
-          <div className="flex-1">
-            <SearchBox />
-          </div>
-          <div className="absolute right-0 mr-16">
-            <PoweredBy />
-          </div>
+        <SearchHeader />
+        <div className="flex gap-3 ml-2">
+          <Refinements />
+          <SearchResults />
         </div>
-        <RefinementList attribute="repo" />
-        <Hits<MyHit> hitComponent={Hit} />
       </InstantSearch>
     </main>
   );

@@ -1,6 +1,6 @@
 import { formatDistanceToNow, format } from "date-fns";
 import { Highlight } from "react-instantsearch";
-import type { AlgoliaHit } from "instantsearch.js";
+import type { Hit as AlgoliaHit } from "instantsearch.js";
 
 export type MyHit = AlgoliaHit<{
   name: string;
