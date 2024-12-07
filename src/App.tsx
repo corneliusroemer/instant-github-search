@@ -1,5 +1,9 @@
 import { liteClient as algoliasearch } from "algoliasearch/lite";
-import { InstantSearch } from "react-instantsearch";
+import {
+  ClearRefinements,
+  CurrentRefinements,
+  InstantSearch,
+} from "react-instantsearch";
 import { Refinements } from "./Refinements";
 import { SearchResults } from "./SearchResults";
 import { SearchHeader } from "./SearchHeader";
@@ -18,6 +22,7 @@ export default function App() {
         insights
       >
         <SearchHeader />
+        <CurrentRefinements />
         <div className="flex gap-3 ml-2">
           <Refinements />
           <SearchResults />
