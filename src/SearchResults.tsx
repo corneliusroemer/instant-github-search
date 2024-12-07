@@ -1,10 +1,10 @@
-import { Hits } from "react-instantsearch";
+import { Hits, InfiniteHits } from "react-instantsearch";
 import { MyHit, Hit } from "./Hits";
 
 export function SearchResults() {
   return (
     <div className="flex-1">
-      <Hits<MyHit> hitComponent={Hit} />
+      <InfiniteHits<MyHit> hitComponent={Hit} showPrevious={false} />
     </div>
   );
 }

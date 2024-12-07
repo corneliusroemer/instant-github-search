@@ -2,14 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-.ais-Hits-item {
+.ais-InfiniteHits-item {
     @apply border-none p-0 m-0 shadow-none;
 }
 
-.ais-Hits-list {
+.ais-InfiniteHits-list {
     @apply border-none p-0 m-0 shadow-none;
 }
 
-.ais-Hits {
+.ais-InfiniteHits {
     @apply border-none p-0 m-0 shadow-none;
 }

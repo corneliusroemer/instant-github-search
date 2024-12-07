@@ -14,7 +14,13 @@ function RefinementSection({
   return (
     <div className="mb-4">
       <p className="text-sm font-semibold text-gray-600 mb-1">{title}</p>
-      <RefinementList attribute={attribute} operator={operator} />
+      <RefinementList
+        attribute={attribute}
+        operator={operator}
+        showMore
+        searchable
+        showMoreLimit={200}
+      />
     </div>
   );
 }

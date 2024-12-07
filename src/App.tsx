@@ -15,7 +15,7 @@ const searchClient = algoliasearch(
 
 export default function App() {
   return (
-    <main>
+    <main className="m-2">
       <InstantSearch
         searchClient={searchClient}
         indexName={import.meta.env.VITE_ALGOLIA_INDEX_NAME}
