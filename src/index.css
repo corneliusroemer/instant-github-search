@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ais-Hits-item {
+    @apply border-none p-0 m-0 shadow-none;
+}
+
+.ais-Hits-list {
+    @apply border-none p-0 m-0 shadow-none;
+}
+
+.ais-Hits {
+    @apply border-none p-0 m-0 shadow-none;
+}
