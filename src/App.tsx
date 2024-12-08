@@ -10,7 +10,7 @@ import { SearchHeader } from "./SearchHeader";
 
 const searchClient = algoliasearch(
   import.meta.env.VITE_ALGOLIA_APP_ID,
-  import.meta.env.VITE_ALGOLIA_SEARCH_KEY
+  import.meta.env.VITE_ALGOLIA_SEARCH_KEY,
 );
 
 export default function App() {

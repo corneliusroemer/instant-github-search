@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "format": "prettier --write .",
+    "preview-fast": "tsc -b && vite build --mode development && vite preview"
   },
   "dependencies": {
     "@vitejs/plugin-react-swc": "^3.7.2",

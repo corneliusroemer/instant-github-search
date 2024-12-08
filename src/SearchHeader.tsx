@@ -10,7 +10,7 @@ export function SearchHeader() {
       clearTimeout(timeoutRef.current);
       timeoutRef.current = setTimeout(() => search(query), debounceMs);
     },
-    [debounceMs]
+    [debounceMs],
   );
 
   return (

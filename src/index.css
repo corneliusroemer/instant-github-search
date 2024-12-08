@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 .ais-InfiniteHits-item {
-    @apply border-none p-0 m-0 shadow-none;
+  @apply border-none p-0 m-0 shadow-none;
 }
 
 .ais-InfiniteHits-list {
-    @apply border-none p-0 m-0 shadow-none;
+  @apply border-none p-0 m-0 shadow-none;
 }
 
 .ais-InfiniteHits {
-    @apply border-none p-0 m-0 shadow-none;
+  @apply border-none p-0 m-0 shadow-none;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
