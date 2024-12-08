@@ -5,8 +5,6 @@ updates:
     schedule:
       interval: "weekly"
     target-branch: "main"
-    labels:
-      - "dependencies"
     groups:
       dev-dependencies:
         dependency-type: "development"
@@ -18,5 +16,3 @@ updates:
     schedule:
       interval: "weekly"
     target-branch: "main"
-    labels:
-      - "ci-cd"
