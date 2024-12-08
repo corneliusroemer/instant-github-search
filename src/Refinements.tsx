@@ -1,49 +1,10 @@
-import { ClearRefinements, Menu, RefinementList } from "react-instantsearch";
-
-type RefinementSectionProps = {
-  title: string;
-  attribute: string;
-  operator?: "and" | "or";
-};
-
-function RefinementSection({
-  title,
-  attribute,
-  operator,
-}: RefinementSectionProps) {
-  return (
-    <div className="mb-4">
-      <p className="text-sm font-semibold text-gray-600 mb-1">{title}</p>
-      <RefinementList
-        attribute={attribute}
-        operator={operator}
-        showMore
-        searchable
-        showMoreLimit={200}
-      />
-    </div>
-  );
-}
-
-function MenuSection({
-  title,
-  attribute,
-}: {
-  title: string;
-  attribute: string;
-}) {
-  return (
-    <div className="mb-4">
-      <p className="text-sm font-semibold text-gray-600 mb-1">{title}</p>
-      <Menu attribute={attribute} className="ml-1" />
-    </div>
-  );
-}
+import { RefinementSection } from "./RefinementSection";
+import { MenuSection } from "./MenuSection";
+import { RangeSection } from "./RangeSection";
 
 export function Refinements() {
   return (
     <div className="w-48">
-      <ClearRefinements className="my-2" />
       <MenuSection title="Type" attribute="type" />
       <MenuSection title="Repository" attribute="repo" />
       <MenuSection title="State" attribute="state" />
@@ -53,6 +14,9 @@ export function Refinements() {
         attribute="labels"
         operator="and"
       />
+      <RangeSection title="Issue Number" attribute="number" />
+      {/* <RangeSection title="Reactions" attribute="reactions" /> */}
+      {/* <RangeSection title="Comments" attribute="comments" /> */}
     </div>
   );
 }
