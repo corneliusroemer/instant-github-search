@@ -3,7 +3,7 @@ import { useCallback, useRef, useState } from "react";
 
 export function SearchHeader() {
   const timeoutRef = useRef<number>();
-  const [debounceMs, setDebounceMs] = useState(500);
+  const [debounceMs, setDebounceMs] = useState(250);
 
   const queryHook = useCallback(
     (query: string, search: (value: string) => void) => {
